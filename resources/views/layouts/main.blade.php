@@ -11,7 +11,7 @@
 <body>
     <div class="min-h-screen flex"> <!-- Contenedor principal -->
 
-        <aside class="fixed top-0 left-0 h-screen flex flex-col w-50 bg-cyan-950"><!-- sidebar -->
+        <aside class="top-0 left-0 h-screen flex flex-col w-50 bg-cyan-950"><!-- sidebar -->
             <div class="text-white flex p-3 items-center gap-2"><!-- logo -->
                 <a href="">
                     <img src="{{ asset('imagenes/logo.png') }}" alt="Logo del sistema de hoteleria" width="150" height="300">
@@ -23,12 +23,12 @@
             </div><!-- fin del menú -->
 
             <!-- Cerrar sesión al fondo -->
-            <div class="mt-auto mb-6 text-white flex justify-center">
+            <div class="mt-auto mb-6 text-white flex justify-center hover:text-red-600">
                 <button><i class="fa-solid fa-sign-out-alt"></i> Cerrar Sesión</button>
             </div>
         </aside><!-- fin del sidebar -->
         <div class="flex-1 bg-slate-100"><!-- contenido principal -->
-            <div class="bg-cyan-950 p-4 text-white flex items-center px-4">
+            <div class="bg-cyan-900 p-4 text-white flex items-center px-4">
 
                 <div class="text-lg ml-auto text-right px-6">
                     <i class="fas fa-user"></i> Admin
