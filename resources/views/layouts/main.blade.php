@@ -23,8 +23,14 @@
             </div><!-- fin del menú -->
 
             <!-- Cerrar sesión al fondo -->
-            <div class="mt-auto mb-6 text-white flex justify-center hover:text-red-600">
-                <button><i class="fa-solid fa-sign-out-alt"></i> Cerrar Sesión</button>
+            <div class="mt-auto mb-6 px-4">
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="w-full text-white flex items-center justify-center gap-2 py-2 px-3 rounded-lg hover:bg-red-600/20 hover:text-red-400 transition-colors cursor-pointer">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Cerrar Sesión</span>
+                    </button>
+                </form>
             </div>
         </aside><!-- fin del sidebar -->
         <div class="flex-1 bg-slate-100"><!-- contenido principal -->
